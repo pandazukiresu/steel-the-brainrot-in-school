@@ -1,9 +1,18 @@
 window.CHARACTERS = window.CHARACTERS || [];
 
 const CHAR_FOLDERS = [
-  "momokappa"
+  "garizou",
+  "momokappa",
+  "tikappa",
+  "kurobaneyatyoubee",
+  "tunenari",
+  "momokawaballade",
+  "marcus",
+  "rosmomokawaburaza",
+  "rahanakappakonbineshon"
 ];
 
-CHAR_FOLDERS.forEach(folder => {
-  document.write(`<script src="characters/${folder}/data.js"><\/script>`);
-});
+for (let i = 0; i < CHAR_FOLDERS.length; i++) {
+  const folder = CHAR_FOLDERS[i];
+  document.write('<script src="characters/' + folder + '/data.js"><\/script>');
+}
